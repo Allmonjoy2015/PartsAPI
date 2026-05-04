@@ -1,0 +1,41 @@
+{
+  "name": "parts-api",
+  "version": "1.0.0",
+  "description": "Parts finder, cross-reference, and profile API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node seed.js",
+    "parker:bulk": "node scripts/bulkParkerRun.js",
+    "parker:import": "node scripts/parkerCsvImport.js",
+    "parker:test": "node scripts/testLookup.js",
+    "pdf:import": "node scripts/pdfCrossRefImport.js"
+  },
+  "keywords": [
+    "parts",
+    "api",
+    "cross-reference"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "node-cron": "^4.2.1",
+    "node-fetch": "^2.7.0",
+    "pdfjs-dist": "^3.11.174",
+    "puppeteer-core": "^24.41.0",
+    "sql.js": "^1.14.1",
+    "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
